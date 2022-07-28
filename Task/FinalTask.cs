@@ -1,2 +1,23 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+string[] CreateStringArray(int size)
+{
+    string[] newArray = new string[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        Console.Write($"Input {i + 1} element of the array: ");
+        newArray[i] = Console.ReadLine();
+    }
+
+    return newArray;
+}
+
+void ShowStringArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();
+}
+
+
