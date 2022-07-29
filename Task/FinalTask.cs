@@ -28,3 +28,18 @@ int RandomInteger (int min, int max)
     return size;
 }
 
+string[] SelectStringsByLength (string[] array, int value)
+{
+    string[] SelectedArray = new string[array.Length];
+    int j = 0;
+
+    for (int i = 0; i < array.Length; i++)
+        if(array[i].Length <= value)
+        {
+            SelectedArray[j] = array[i];
+            j++;
+        }
+
+    return SelectedArray;
+}
+
