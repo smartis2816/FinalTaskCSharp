@@ -43,3 +43,12 @@ string[] SelectStringsByLength (string[] array, int value)
     return SelectedArray;
 }
 
+int value = 3;
+int min = 2;
+int max = 7;
+
+int size = RandomInteger(min, max);
+string[] InputArray = CreateStringArray(size);
+Console.WriteLine();
+ShowStringArray(InputArray);
+ShowStringArray(SelectStringsByLength(InputArray, value));
