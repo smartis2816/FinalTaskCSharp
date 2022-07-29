@@ -20,4 +20,11 @@ void ShowStringArray(string[] array)
     Console.WriteLine();
 }
 
+int RandomInteger (int min, int max)
+{
+    Random rand = new Random();
+    int size = rand.Next(min, max);
+
+    return size;
+}
 
